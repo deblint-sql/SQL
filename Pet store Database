@@ -1,0 +1,29 @@
+Create a pet store database
+
+CREATE TABLE petstore (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, color TEXT);
+
+INSERT INTO petstore VALUES (1, "Dog Bed", 14, 3, "Purple");
+INSERT INTO petstore VALUES (2, "Dog Bowl", 4, 11, "Silver");
+INSERT INTO petstore VALUES (3, "Cat Tower", 6, 4, "Tan");
+INSERT INTO petstore VALUES (4, "Leash", 30, 1, "Multicolor");
+INSERT INTO petstore VALUES (5, "Wet Food", 16, 8, "Yellow");
+INSERT INTO petstore VALUES (6, "Dry Food", 17, 8, "Blue");
+INSERT INTO petstore VALUES (7, "Bones", 7, 7, "White");
+INSERT INTO petstore VALUES (8, "Jerky", 10, 7, "Brown");
+INSERT INTO petstore VALUES (9, "Clippers", 3, 10, "Black");
+INSERT INTO petstore VALUES (10, "Squeaky Toy", 18, 2, "Green");
+INSERT INTO petstore VALUES (11, "Slicker Brush", 5, 10, "Black");
+INSERT INTO petstore VALUES (12, "Toothpaste", 8, 12, "White");
+INSERT INTO petstore VALUES (13, "Shaver", 13, 9, "Red");
+INSERT INTO petstore VALUES (14, "Crate", 26, 13, "Gray");
+INSERT INTO petstore VALUES (15, "Hamsters", 4, 11, "Brown and Tan");
+
+-Display the database ordered by price.
+SELECT * FROM petstore ORDER BY price;
+
+-Display items that have an inventory less than 5. 
+SELECT * FROM petstore WHERE quantity <5;
+
+
+-Display the most expensive item.
+SELECT MAX(price) FROM petstore;
